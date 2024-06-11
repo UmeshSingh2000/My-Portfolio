@@ -10,18 +10,10 @@
     font-family: "Lato", sans-serif;
     scroll-behavior: smooth;
     user-select: none;
+    /* cursor:none; */
+    cursor: url('./cursors/default-cursor.svg'), default;
+
 }
-.circle {
-    height: 24px;
-    width: 24px;
-    border-radius: 24px;
-    background-color: black;
-    position: fixed; 
-    top: 0;
-    left: 0;
-    pointer-events: none;
-    z-index: 99999999;
-  }
 
 ::-webkit-scrollbar {
     display: none;
@@ -65,7 +57,8 @@ body {
 }
 
 .links .box {
-    cursor: pointer;
+    /* cursor: pointer; */
+    cursor: url('./cursors/pointer-cursor.svg'), pointer;
     background-color: #D9D9D9;
     width: 70px;
     height: 70px;
@@ -103,7 +96,9 @@ body {
 }
 
 .hamburger_menu_box {
-    cursor: pointer;
+    /* cursor: pointer; */
+    cursor: url('./cursors/pointer-cursor.svg'), pointer;
+
     height: 15%;
     display: flex;
     color: white;
@@ -114,7 +109,7 @@ body {
 }
 
 .hamburger_menu_box:hover {
-    background-color: #D9D9D9;  
+    background-color: #D9D9D9;
     color: black;
 }
 
@@ -133,7 +128,9 @@ body {
 #hamburger_menu_btn .fa-solid {
     color: white;
     font-size: 3rem;
-    cursor: pointer;
+    /* cursor: pointer; */
+    cursor: url('./cursors/pointer-cursor.svg'), pointer;
+
 }
 
 main {
@@ -179,7 +176,9 @@ main {
     font-size: 1rem;
     margin-top: 1rem;
     width: 10vw;
-    cursor: pointer;
+    /* cursor: pointer; */
+    cursor: url('./cursors/pointer-cursor.svg'), pointer;
+
     /* background-color: #2F2F2F; */
     /* background-color: rgb(241, 241, 73); */
     background-color: #8FE71A;
@@ -212,14 +211,17 @@ main {
     top: 0;
     /* background-color: #F5F5F5; */
     background-color: #E4E4E4;
+
 }
-.about_top{
+
+.about_top {
     overflow: hidden;
     height: 35%;
     position: relative;
     background-color: black;
 }
-.about_top h1{ 
+
+.about_top h1 {
     z-index: 2;
     position: absolute;
     /* top: 50%; */
@@ -232,25 +234,27 @@ main {
     /* color: white; */
     /* color: rgb(128, 128, 7); */
     color: #8FE71A;
-    mask-image: linear-gradient(
-        to right,
-        rgba(0,0,0,0),
-        rgba(0,0,0,1) 0%,
-        rgba(0,0,0,1) 30%,
-        rgba(0,0,0,0)
-    );
+    mask-image: linear-gradient(to right,
+            rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 1) 0%,
+            rgba(0, 0, 0, 1) 30%,
+            rgba(0, 0, 0, 0));
 }
-.about_top img{
+
+.about_top img {
     position: absolute;
     top: 0;
     right: 15%;
     height: 100%;
 }
-.content{
+
+.content {
     margin: 5% 10%;
-    
+    font-size: 1.5rem;
+
 }
-.skills{
+
+.skills {
     display: flex;
     gap: 10px;
     width: 80%;
@@ -259,19 +263,19 @@ main {
     /* border: 1px solid black; */
     position: relative;
     overflow: hidden;
-    mask-image: linear-gradient(
-        to right,
-        rgba(0,0,0,0),
-        rgba(0,0,0,1) 8%,
-        rgba(0,0,0,1) 80%,
-        rgba(0,0,0,0)
-    );
+    mask-image: linear-gradient(to right,
+            rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 1) 8%,
+            rgba(0, 0, 0, 1) 80%,
+            rgba(0, 0, 0, 0));
 }
-.skills .box{
+
+.skills .box {
     width: 100px;
     background-color: black;
     height: 50px;
-    display:flex;
+    display: flex;
+
     justify-content: center;
     align-items: center;
     position: absolute;
@@ -280,17 +284,19 @@ main {
     animation-duration: 20s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     text-align: center;
     /* color: white; */
     color: #8FE71A;
     font-weight: 900;
 }
+
 @keyframes scroll_left {
-    to{
+    to {
         right: 100%;
     }
 }
+
 .box1 {
     animation-delay: calc(20s / 8 * (8 - 1));
 }
@@ -325,9 +331,9 @@ main {
 
 
 
-#projects{
-    position: sticky;
-    top: 0;
+#projects {
+    /* position: sticky;
+    top: 0; */
     padding: 100px;
     min-height: 100vh;
     width: 100%;
@@ -339,29 +345,36 @@ main {
     gap: 10px;
     align-items: center;
 }
-#projects img{
+
+#projects img {
     margin-top: 20px;
     width: 100%;
     filter: grayscale(1);
     transition: all .3s;
-  
-}
-#projects img:hover{
-    filter: grayscale(0);
-    scale: 105%;
-    
 
 }
-.project a{
+
+#projects img:hover {
+    filter: grayscale(0);
+    scale: 105%;
+    cursor: url('./cursors/pointer-cursor.svg'), pointer;
+
+
+}
+
+.project a {
     width: 60%;
 }
-.project,.project a{
+
+.project,
+.project a {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
 }
-.project p{
+
+.project p {
     width: 50%;
     text-align: center;
     margin-top: 10px;
@@ -387,7 +400,8 @@ main {
     .right {
         display: none;
     }
-    .left_container{
+
+    .left_container {
         position: absolute;
         left: 0;
         margin-left: 2vw;
@@ -395,16 +409,20 @@ main {
         width: 90%;
 
     }
-    .left h1{
+
+    .left h1 {
         font-size: 40px;
     }
-    .left h2{
+
+    .left h2 {
         font-size: 25px;
     }
-    .left p{
+
+    .left p {
         font-size: 18px;
     }
-    .left{
+
+    .left {
         position: relative;
         width: 100%;
         height: 100vh;
@@ -413,24 +431,93 @@ main {
         background-size: cover;
         background-repeat: no-repeat;
     }
-    .links{
+
+    .links {
         display: none;
     }
-    .btn{
+
+    .btn {
         width: 130px;
     }
+
+    /* about section media querry */
+
+    .about_top img {
+        right: 0;
+    }
+
+    .about_top h1 {
+        left: 0;
+        top: 10%;
+        font-size: 8rem;
+        mask-image: none;
+    }
+    .skills {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        /* width: 80%; */
+        height: auto;
+        margin: 0 auto;
+        overflow: hidden;
+        mask-image: none;
+    }
+
+    .skills .box {
+        width: 100px;
+        position: static;
+        animation-name: none;
+        right: auto;
+        left: 0;
+    }
+    .content {
+        font-size: 1rem;
+    
+    }
+    .project a {
+        width: 100%;
+    }
+    #projects img {
+        width: 90vw;
+    
+    }
+    .project p {
+        font-size: 4vw;
+        width: 90%;
+    }
 }
+
 @media (max-width:384px) {
-    .left h2{
+    .left h2 {
         font-size: 20px;
     }
-    .left h1{
+
+    .left h1 {
         font-size: 30px;
     }
-    .left p{
+
+    .left p {
         font-size: 15px;
     }
-    .btn{
+
+    .btn {
         width: 100px;
+    }
+
+    .about_top h1 {
+        font-size: 30vw;
+        left: auto;
+        right: 0;
+        top: 50%;
+        mask-image: linear-gradient(to right,
+                rgba(0, 0, 0, 0),
+                rgba(0, 0, 0, 1) 0%,
+                rgba(0, 0, 0, 1) 50%,
+                rgba(0, 0, 0, 0));
+    }
+    .content {
+        font-size: .8rem;
+    
     }
 }
