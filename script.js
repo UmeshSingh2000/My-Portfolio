@@ -11,3 +11,7 @@ box.forEach((box) => {
         menu.classList.remove("active");
     })
 })
+let loading=document.getElementById("load")
+window.addEventListener("load",()=>{
+    loading.style.display="none";
+})

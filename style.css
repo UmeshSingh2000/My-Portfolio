@@ -9,11 +9,32 @@
     box-sizing: border-box;
     font-family: "Lato", sans-serif;
     scroll-behavior: smooth;
-    user-select: none;
+    /* user-select: none; */
     /* cursor:none; */
     cursor: url('./cursors/default-cursor.svg'), default;
 
 }
+#load{
+    display: block;
+    z-index: 5000;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-color: white;
+}
+.loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 50px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 8px solid white;
+    border-right-color: black;
+    animation: l2 1s infinite linear;
+  }
+  @keyframes l2 {to{transform: translate(-50%,-50%) rotate(1turn) }}
 
 ::-webkit-scrollbar {
     display: none;
