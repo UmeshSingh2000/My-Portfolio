@@ -20,26 +20,27 @@
 
     <div class="scroll-watcher"></div>
     <div class="hamburger_menu">
-        <div class="hamburger_menu_box">
-            <a href="#about">
+        <a href="#">
+            <div class="hamburger_menu_box">
+                <h1>resume</h1>
+            </div>
+        </a>
+        <a href="#about">
+            <div class="hamburger_menu_box">
                 <h1>about</h1>
-            </a>
-        </div>
-        <div class="hamburger_menu_box">
-            <h1>resume</h1>
-
-        </div>
-        <div class="hamburger_menu_box">
-            <a href="#projects">
+            </div>
+        </a>
+        <a href="#projects">
+            <div class="hamburger_menu_box">
                 <h1>projects</h1>
-            </a>
-
-        </div>
-        <div class="hamburger_menu_box">
-            <a href="#contact">
+            </div>
+        </a>
+        <a href="#contact">
+            <div class="hamburger_menu_box">
                 <h1>contact</h1>
-            </a>
-        </div>
+            </div>
+        </a>
+        
     </div>
     <div id="hamburger_menu_btn">
         <i class="fa-solid fa-bars"></i>
@@ -64,7 +65,7 @@
                     <h1>Web Developer.</h1>
                     <p>Proficient web developer specializing in ReactJS. I have a passion for crafting
                         intuitive and dynamic web applications that make a positive impact.</p>
-                    <button class="btn">Contact Me</button>
+                    <a href="#contact"><button class="btn">Contact</button></a>
                 </div>
             </section>
             <section class="right">
@@ -101,6 +102,7 @@
         </section>
     </div>
     <section id="projects">
+        <h1 style="font-size: 10vw; color: #7E7E7E; font-weight: 900;">Projects</h1>
         <div class="project">
             <a href="https://umeshsingh2000.github.io/Digital-Craft/" target="_blank"><img src="Media/DC.png" alt=""
                     data-aos="fade-down"></a>
@@ -158,11 +160,13 @@
                 <div>
                     <h1>Let’s get <br> in touch.</h1>
                 </div>
-                <form action="">
-                    <input type="text" placeholder="Name">
-                    <input type="Email" placeholder="Email">
-                    <textarea name="" id="" placeholder="Message" rows="8" style="resize: vertical;"></textarea>
+                <form  id="form" method="POST">
+                    <input type="hidden" name="access_key" value="32330f78-6099-432c-9750-fd4a7f446144">
+                    <input type="text" placeholder="Name" id="name" name="name">
+                    <input type="Email" placeholder="Email" id="email" name="email">
+                    <textarea placeholder="Message" rows="8" cols="40" id="message" required name="message"></textarea>
                     <button id="btn" type="submit">Send</button>
+                    <div id="result"></div>
                 </form>
             </div>
         </section>
@@ -177,6 +181,7 @@
     <script>
         AOS.init();
     </script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="script.js"></script>
 </body>
 
