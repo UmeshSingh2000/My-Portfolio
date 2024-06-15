@@ -435,7 +435,7 @@ main {
 
 }
 .contact_left img{
-    transform: rotateY(180deg);
+    transform: rotateY(180deg)!important; 
     height: 100%;
 }
 form{
