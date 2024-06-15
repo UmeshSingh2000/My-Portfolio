@@ -444,6 +444,7 @@ form{
     gap: 10px;
 }
 .contact_right{
+    z-index: 2;
     width: 50%;
     color: white;
     display: flex;
@@ -592,6 +593,24 @@ form{
         font-size: 4vw;
         width: 90%;
     }
+    .contact_left{
+        display: none;
+    }
+    .contact_right h1{
+        font-size: 4rem;
+    }
+    .contact_right{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        background-image: url("Media/WhatsApp\ Image\ 2024-06-03\ at\ 12.29.50_55d38416.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .contact_right input,#message{
+        width: 300px;
+    }
 }
 
 @media (max-width:384px) {
@@ -625,5 +644,16 @@ form{
     .content {
         font-size: .8rem;
     
+    }
+    .contact_right h1{
+        font-size: 3rem;
+    }
+    .contact_right input,#message{
+        width: 70%;
+        margin: 0 auto;
+    }
+    #btn{
+        width: 70%;
+        margin: 0 auto;
     }
 }
