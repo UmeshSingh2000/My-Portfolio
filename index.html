@@ -5,20 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- AOS for animations -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Custom stylesheet -->
     <link rel="stylesheet" href="style.css">
+    <!-- Meta tags for SEO and social sharing -->
+    <meta name="description" content="Portfolio of Umesh Singh Mehta, a web developer specializing in ReactJS.">
+    <meta property="og:title" content="Umesh Singh Mehta - Web Developer">
+    <meta property="og:description" content="Portfolio of Umesh Singh Mehta, a web developer specializing in ReactJS.">
+    <meta property="og:image" content="URL-to-image.jpg">
+    <meta property="og:url" content="http://your-portfolio-url.com">
+    <meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body>
 
+    <!-- Loading animation -->
     <div id="load">
         <div class="loader"></div>
     </div>
 
+    <!-- Scroll watcher for animations -->
     <div class="scroll-watcher"></div>
+
+    <!-- Hamburger menu for navigation -->
     <div class="hamburger_menu">
         <a href="#">
             <div class="hamburger_menu_box">
@@ -40,25 +54,30 @@
                 <h1>contact</h1>
             </div>
         </a>
-        
     </div>
+
+    <!-- Hamburger menu button -->
     <div id="hamburger_menu_btn">
         <i class="fa-solid fa-bars"></i>
     </div>
+
+    <!-- Social media and contact links -->
     <div class="links">
         <div class="box">
-            <a href="https://github.com/UmeshSingh2000" target="_blank"><img src="Media/github-logo.png" alt=""></a>
+            <a href="https://github.com/UmeshSingh2000" target="_blank" rel="noopener noreferrer"><img src="Media/github-logo.png" alt="GitHub"></a>
         </div>
         <div class="box">
-            <a href="https://www.linkedin.com/in/umesh-singh-mehta-93819a194/" target="_blank"><img
-                    src="Media/linkedin.png" alt=""></a>
+            <a href="https://www.linkedin.com/in/umesh-singh-mehta-93819a194/" target="_blank" rel="noopener noreferrer"><img src="Media/linkedin.png" alt="LinkedIn"></a>
         </div>
         <div class="box">
-            <a href="mailto:umeshsinghmehta4@gmail.com" target="_blank"><img src="Media/google.png" alt=""></a>
+            <a href="mailto:umeshsinghmehta4@gmail.com" target="_blank" rel="noopener noreferrer"><img src="Media/google.png" alt="Email"></a>
         </div>
     </div>
+
+    <!-- Main content -->
     <div>
         <main>
+            <!-- Introduction section -->
             <section class="left">
                 <div class="left_container">
                     <h2>Hello, <br> my name is Umesh Singh Mehta </h2>
@@ -68,14 +87,16 @@
                     <a href="#contact"><button class="btn">Contact</button></a>
                 </div>
             </section>
+            <!-- Image section -->
             <section class="right">
-                <img src="Media/WhatsApp Image 2024-06-03 at 12.29.50_55d38416.jpg" alt="">
+                <img src="Media/WhatsApp Image 2024-06-03 at 12.29.50_55d38416.jpg" alt="Umesh Singh Mehta">
             </section>
         </main>
 
+        <!-- About section -->
         <section id="about">
             <div class="about_top">
-                <img src="Media/about_top.jpg" alt="" data-aos="fade-left">
+                <img src="Media/about_top.jpg" alt="About Image" data-aos="fade-left">
                 <h1 data-aos="fade-right">About</h1>
             </div>
             <div class="content">
@@ -88,6 +109,7 @@
                     stunning reality!
                 </p>
             </div>
+            <!-- Skills section -->
             <div class="skills" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="100"
                 data-aos-offset="0">
                 <div class="box box8">HTML</div>
@@ -101,10 +123,14 @@
             </div>
         </section>
     </div>
+
+    <!-- Projects section -->
     <section id="projects">
         <h1 style="font-size: 10vw; color: #7E7E7E; font-weight: 900;">Projects</h1>
+        
+        <!-- Project 1 -->
         <div class="project">
-            <a href="https://umeshsingh2000.github.io/Digital-Craft/" target="_blank"><img src="Media/DC.png" alt=""
+            <a href="https://umeshsingh2000.github.io/Digital-Craft/" target="_blank" rel="noopener noreferrer"><img src="Media/DC.png" alt="Digital Craft Project"
                     data-aos="fade-down"></a>
             <p data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="100" data-aos-offset="0">In this
                 project, I leverage the versatility of Bootstrap to craft a sleek and responsive website. Digital Craft
@@ -112,16 +138,20 @@
                 online presence. From seamless navigation to visually appealing layouts, this project showcases the art
                 of digital craftsmanship using Bootstrap.</p>
         </div>
+
+        <!-- Project 2 -->
         <div class="project">
-            <a href="https://umeshsingh2000.github.io/Task-Manager/" target="_blank"><img src="Media/TM.jpg" alt=""
+            <a href="https://umeshsingh2000.github.io/Task-Manager/" target="_blank" rel="noopener noreferrer"><img src="Media/TM.jpg" alt="Task Manager Project"
                     data-aos="fade-down"></a>
             <p data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="100" data-aos-offset="0">This Task
                 Manager is a simple web application that allows users to manage their tasks efficiently. With features
-                like adding tasks marking tasks as complete deleting tasks and filtering tasks based on their status
+                like adding tasks, marking tasks as complete, deleting tasks, and filtering tasks based on their status,
                 this application provides a streamlined way to organize your tasks.</p>
         </div>
+
+        <!-- Project 3 -->
         <div class="project">
-            <a href="https://netflix-two-beryl.vercel.app/" target="_blank"><img src="Media/NT.jpg" alt=""
+            <a href="https://netflix-two-beryl.vercel.app/" target="_blank" rel="noopener noreferrer"><img src="Media/NT.jpg" alt="Netflix UI Clone Project"
                     data-aos="fade-down"></a>
             <p data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="100" data-aos-offset="0">
                 Experience the magic of Netflix with our UI clone project. Using HTML, CSS, and JavaScript, I've
@@ -130,8 +160,9 @@
                 beloved Netflix experience to life on the web.</p>
         </div>
 
+        <!-- Project 4 -->
         <div class="project">
-            <a href="https://bmi-calculator-orpin-psi.vercel.app/" target="_blank"><img src="Media/BMI.png" alt=""
+            <a href="https://bmi-calculator-orpin-psi.vercel.app/" target="_blank" rel="noopener noreferrer"><img src="Media/BMI.png" alt="BMI Calculator Project"
                     data-aos="fade-down"></a>
             <p data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="100" data-aos-offset="0">BMI
                 Calculator project harnesses the power of ReactJS to deliver a precise and user-friendly tool for
@@ -140,8 +171,9 @@
                 the simplicity and effectiveness of React in action.</p>
         </div>
 
+        <!-- Project 5 -->
         <div class="project">
-            <a href="https://calculator-4cam.vercel.app/" target="_blank"><img src="Media/CALCULATOR.png" alt=""
+            <a href="https://calculator-4cam.vercel.app/" target="_blank" rel="noopener noreferrer"><img src="Media/CALCULATOR.png" alt="Calculator Project"
                     data-aos="fade-down"></a>
             <p data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="100" data-aos-offset="0">
                 Calculator is a straightforward tool crafted with HTML, CSS, and JavaScript. It's designed for ease of
@@ -151,38 +183,40 @@
         </div>
 
     </section>
+
+    <!-- Contact section -->
     <div>
         <section id="contact">
             <div class="contact_left">
-                <img src="Media/WhatsApp Image 2024-06-03 at 12.29.50_55d38416.jpg" alt="" data-aos="fade-up"
+                <img src="Media/WhatsApp Image 2024-06-03 at 12.29.50_55d38416.jpg" alt="Contact Image" data-aos="fade-up"
                 data-aos-anchor-placement="top-bottom">
             </div>
             <div class="contact_right">
                 <div>
                     <h1 data-aos="fade-right">Let’s get <br> in touch.</h1>
                 </div>
-                <form  id="form" method="POST">
+                <form id="form" method="POST">
                     <input type="hidden" name="access_key" value="32330f78-6099-432c-9750-fd4a7f446144">
-                    <input type="text" placeholder="Name" id="name" name="name" required data-aos="fade-left">
-                    <input type="Email" placeholder="Email" id="email" name="email" required  data-aos="fade-left">
-                    <textarea placeholder="Message" rows="8" cols="40" id="message" required name="message" data-aos="fade-left"></textarea>
+                    <input type="text" placeholder="Name" id="name" name="name" required data-aos="fade-right">
+                    <input type="Email" placeholder="Email" id="email" name="email" required  data-aos="fade-right">
+                    <textarea placeholder="Message" rows="8" cols="40" id="message" required name="message" data-aos="fade-right"></textarea>
                     <button id="btn" type="submit">Send</button>
                     <div id="result"></div>
                 </form>
             </div>
         </section>
-
-
     </div>
 
-
-
-
+    <!-- AOS (Animate on Scroll) initialization script -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
+
+    <!-- SMTP.js for handling form submission via email -->
     <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <!-- Custom JavaScript file -->
     <script src="script.js"></script>
 </body>
 
