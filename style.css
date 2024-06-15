@@ -504,6 +504,9 @@ form{
 
 
 @media (max-width:814px) {
+    .hamburger_menu a{
+        width: 60%;
+    }
     .right {
         display: none;
     }
@@ -614,6 +617,9 @@ form{
 }
 
 @media (max-width:384px) {
+    .hamburger_menu a{
+        width: 90%;
+    }
     .left h2 {
         font-size: 20px;
     }
