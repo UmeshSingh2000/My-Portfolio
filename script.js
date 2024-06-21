@@ -12,6 +12,7 @@ box.forEach((box) => {
     })
 })
 
+
 //loading
 let loading = document.getElementById("load")
 window.addEventListener("load", () => {
@@ -60,3 +61,11 @@ form.addEventListener('submit', function (e) {
         });
 });
 
+
+
+let hamburger_menu = document.getElementById("hamburger_menu");
+hamburger_menu.addEventListener("click",(e)=>{
+    if(e.target!=box){
+        menu.classList.remove("active");
+    }   
+})
