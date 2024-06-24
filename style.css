@@ -549,7 +549,9 @@ footer{
     }
 
     .links {
-        display: none;
+        right: 0;
+        top: 40%;
+        z-index: 1;
     }
 
     .btn {
