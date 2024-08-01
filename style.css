@@ -437,6 +437,9 @@ main {
     padding: 10px;
     color: rgb(194, 194, 194);
 }
+#projects >h1{
+    font-size: 5rem;
+}
 
 
 #contact {
@@ -527,6 +530,25 @@ footer {
 }
 
 @media (max-width:814px) {
+    #projects >h1{
+        font-size: 12vw;
+    }
+    .technology h1{
+        font-size: 10vw;
+    }
+    #about .about_top h1{
+        font-size: 12vw;
+    }
+    #about .technology .box{
+        width: 85px;
+        height: 85px;
+    }
+    .experience h1{
+        font-size: 10vw;
+    }
+    .education h1{
+        font-size: 10vw;
+    }
     .hamburger_menu a {
         width: 60%;
     }
@@ -618,6 +640,9 @@ footer {
 }
 
 @media (max-width:384px) {
+    .technology .col{
+        flex-direction: column;
+    }
     .hamburger_menu a {
         width: 90%;
     }
