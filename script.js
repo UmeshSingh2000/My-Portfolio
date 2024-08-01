@@ -64,8 +64,20 @@ form.addEventListener('submit', function (e) {
 
 
 let hamburger_menu = document.getElementById("hamburger_menu");
-hamburger_menu.addEventListener("click",(e)=>{
-    if(e.target!=box){
+hamburger_menu.addEventListener("click", (e) => {
+    if (e.target != box) {
         menu.classList.remove("active");
-    }   
+    }
+})
+
+
+let projects = document.querySelectorAll('.project')
+projects.forEach((project)=>{
+    let video = project.querySelector('video')
+    video.addEventListener('mouseenter', () => {
+        video.play()
+    })
+    video.addEventListener('mouseleave',()=>{
+        video.pause()
+    })
 })
